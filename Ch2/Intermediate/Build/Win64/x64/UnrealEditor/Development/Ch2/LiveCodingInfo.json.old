@@ -1,0 +1,19 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Ch2.gen.cpp.obj": [
+			"Ch2.init.gen.cpp.obj",
+			"DealDamage.gen.cpp.obj",
+			"ExecCalc_Damage.gen.cpp.obj",
+			"GA_AttackBase.gen.cpp.obj",
+			"GA_Blocking.gen.cpp.obj",
+			"GA_ChargeAttack.gen.cpp.obj",
+			"GA_HeavyAttack.gen.cpp.obj",
+			"GA_LightAttack.gen.cpp.obj",
+			"GA_MeleeAttack.gen.cpp.obj",
+			"MyAttributeSet.gen.cpp.obj",
+			"MyCharacter.gen.cpp.obj",
+			"MyCharacterBase.gen.cpp.obj"
+		]
+	}
+}

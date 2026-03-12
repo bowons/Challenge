@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "g:\\unreal\\nbc\\challenge\\ch2\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ch2\\permoduleinline.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "g:\\unreal\\nbc\\challenge\\ch2\\intermediate\\build\\win64\\x64\\ch2editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "g:\\unreal\\nbc\\challenge\\ch2\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ch2\\definitions.ch2.h",
+            "d:\\epic games\\ue_5.6\\engine\\source\\runtime\\core\\public\\hal\\permoduleinline.inl"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

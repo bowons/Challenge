@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Ch2.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Ch2.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Ch2Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGameplayTags.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Ch2">
+      <UniqueIdentifier>{1A6ED165-EA3B-36B3-AA51-923E1CA83664}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Ch2\Ch2.h">
+      <Filter>Source\Ch2</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Ch2\Ch2.cpp">
+      <Filter>Source\Ch2</Filter>
+    </ClCompile>
+    <None Include="..\..\Source\Ch2\Ch2.Build.cs">
+      <Filter>Source\Ch2</Filter>
+    </None>
+    <Filter Include="Source\Ch2\Public">
+      <UniqueIdentifier>{367AF22C-0BDA-3027-8EDE-99A8261706E9}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Ch2\Public\MyCharacter.h">
+      <Filter>Source\Ch2\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ch2\Public\DealDamage.h">
+      <Filter>Source\Ch2\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ch2\Public\MyCharacterBase.h">
+      <Filter>Source\Ch2\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\Ch2\Public\GAS">
+      <UniqueIdentifier>{E29DBC17-8DB5-37E4-BDEA-16F48E710973}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Ch2\Public\GAS\MyAttributeSet.h">
+      <Filter>Source\Ch2\Public\GAS</Filter>
+    </ClInclude>
+    <Filter Include="Source\Ch2\Public\GAS\Abilities">
+      <UniqueIdentifier>{1AE26DE8-9968-3A93-B8DE-156EAFCC52EF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Ch2\Public\GAS\Abilities\GA_MeleeAttack.h">
+      <Filter>Source\Ch2\Public\GAS\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ch2\Public\GAS\Abilities\GA_ChargeAttack.h">
+      <Filter>Source\Ch2\Public\GAS\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ch2\Public\GAS\Abilities\GA_AttackBase.h">
+      <Filter>Source\Ch2\Public\GAS\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ch2\Public\GAS\Abilities\GA_LightAttack.h">
+      <Filter>Source\Ch2\Public\GAS\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ch2\Public\GAS\Abilities\GA_HeavyAttack.h">
+      <Filter>Source\Ch2\Public\GAS\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ch2\Public\GAS\Abilities\GA_Blocking.h">
+      <Filter>Source\Ch2\Public\GAS\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Ch2\Public\GAS\Abilities\GA_StaminaGen.h">
+      <Filter>Source\Ch2\Public\GAS\Abilities</Filter>
+    </ClInclude>
+    <Filter Include="Source\Ch2\Public\GAS\Calculation">
+      <UniqueIdentifier>{26019FA5-172B-3425-AA65-66137246B411}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Ch2\Public\GAS\Calculation\ExecCalc_Damage.h">
+      <Filter>Source\Ch2\Public\GAS\Calculation</Filter>
+    </ClInclude>
+    <Filter Include="Source\Ch2\Private">
+      <UniqueIdentifier>{4A50A3F2-239E-3E3C-95EE-235C5B7E1BBE}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Ch2\Private\MyCharacter.cpp">
+      <Filter>Source\Ch2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ch2\Private\DealDamage.cpp">
+      <Filter>Source\Ch2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ch2\Private\MyCharacterBase.cpp">
+      <Filter>Source\Ch2\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\Ch2\Private\GAS">
+      <UniqueIdentifier>{001BB6FF-E4BF-3BB7-BB42-B2274891912B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Ch2\Private\GAS\MyAttributeSet.cpp">
+      <Filter>Source\Ch2\Private\GAS</Filter>
+    </ClCompile>
+    <Filter Include="Source\Ch2\Private\GAS\Abilities">
+      <UniqueIdentifier>{5FB3B029-A9B6-3781-A3F4-B9F969F347EB}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Ch2\Private\GAS\Abilities\GA_ChargeAttack.cpp">
+      <Filter>Source\Ch2\Private\GAS\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ch2\Private\GAS\Abilities\GA_MeleeAttack.cpp">
+      <Filter>Source\Ch2\Private\GAS\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ch2\Private\GAS\Abilities\GA_LightAttack.cpp">
+      <Filter>Source\Ch2\Private\GAS\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ch2\Private\GAS\Abilities\GA_HeavyAttack.cpp">
+      <Filter>Source\Ch2\Private\GAS\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ch2\Private\GAS\Abilities\GA_AttackBase.cpp">
+      <Filter>Source\Ch2\Private\GAS\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ch2\Private\GAS\Abilities\GA_Blocking.cpp">
+      <Filter>Source\Ch2\Private\GAS\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Ch2\Private\GAS\Abilities\GA_StaminaGen.cpp">
+      <Filter>Source\Ch2\Private\GAS\Abilities</Filter>
+    </ClCompile>
+    <Filter Include="Source\Ch2\Private\GAS\Calculation">
+      <UniqueIdentifier>{CDB85ABA-5C5D-3D45-AF86-116B56206AD3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Ch2\Private\GAS\Calculation\ExecCalc_Damage.cpp">
+      <Filter>Source\Ch2\Private\GAS\Calculation</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

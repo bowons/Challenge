@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "g:\\unreal\\nbc\\challenge\\ch2\\source\\ch2\\ch2.cpp",
+        "ProvidedModule": "",
+        "PCH": "g:\\unreal\\nbc\\challenge\\ch2\\intermediate\\build\\win64\\x64\\ch2editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "g:\\unreal\\nbc\\challenge\\ch2\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\ch2\\definitions.ch2.h",
+            "g:\\unreal\\nbc\\challenge\\ch2\\source\\ch2\\ch2.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
