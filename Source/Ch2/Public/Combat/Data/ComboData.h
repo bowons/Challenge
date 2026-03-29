@@ -26,4 +26,7 @@ struct FComboData
 	// 데미지 (참고용)
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combo")
 	float Damage = 10.0f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Combo")
+	float StaminaCost = 10.0f;
 };

@@ -5,6 +5,7 @@
 #include "Abilities/Tasks/AbilityTask_PlayMontageAndWait.h"
 #include "Abilities/Tasks/AbilityTask_WaitGameplayEvent.h"
 #include "AbilitySystemComponent.h"
+#include "Subsystem/CombatManagerSubsystem.h"
 
 UGA_MeleeAttack::UGA_MeleeAttack()
 {
@@ -65,6 +66,7 @@ void UGA_MeleeAttack::ActivateAbility(const FGameplayAbilitySpecHandle Handle, c
         WaitEventTask->EventReceived.AddDynamic(this, &UGA_MeleeAttack::OnDamageGameplayEvent);
         WaitEventTask->ReadyForActivation();
     }
+    
 }
 
 void UGA_MeleeAttack::EndAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, bool bReplicateEndAbility, bool bWasCancelled)

@@ -24,7 +24,7 @@ namespace MyGameplayTags
 
     // Data Tags
     UE_DECLARE_GAMEPLAY_TAG_EXTERN(Data_Damage);
-    UE_DECLARE_GAMEPLAY_TAG_EXTERN(Data_StaminaCost);
+    UE_DECLARE_GAMEPLAY_TAG_EXTERN(Data_Stamina_Cost);
 
     // Ability Tags
     UE_DECLARE_GAMEPLAY_TAG_EXTERN(Ability_Attack_Charge);
@@ -94,7 +94,7 @@ public:
     FGameplayTag Data_Damage;
 
     /** 데이터: 스태미너 코스트 */
-    FGameplayTag Data_StaminaCost;
+    FGameplayTag Data_Stamina_Cost;
 
     //=========================================================================
     // Ability Tags

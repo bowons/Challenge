@@ -20,7 +20,7 @@ namespace MyGameplayTags
 
     // Data Tags
     UE_DEFINE_GAMEPLAY_TAG(Data_Damage, "Data.Damage");
-    UE_DEFINE_GAMEPLAY_TAG(Data_StaminaCost, "Data.StaminaCost");
+    UE_DEFINE_GAMEPLAY_TAG(Data_Stamina_Cost, "Data.Stamina.Cost");
 
     // Ability Tags
     UE_DEFINE_GAMEPLAY_TAG(Ability_Attack_Charge, "Ability.Attack.Charge");
@@ -67,7 +67,7 @@ void FMyGameplayTags::InitializeNativeTags()
     Tags.Combat_Window_Parry = MyGameplayTags::Combat_Window_Parry.GetTag();
 
     Tags.Data_Damage = MyGameplayTags::Data_Damage.GetTag();
-    Tags.Data_StaminaCost = MyGameplayTags::Data_StaminaCost.GetTag();
+    Tags.Data_Stamina_Cost = MyGameplayTags::Data_Stamina_Cost.GetTag();
 
     Tags.Ability_Attack_Charge = MyGameplayTags::Ability_Attack_Charge.GetTag();
     Tags.Ability_Attack_Heavy = MyGameplayTags::Ability_Attack_Heavy.GetTag();
