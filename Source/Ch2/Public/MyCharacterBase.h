@@ -91,4 +91,12 @@ protected:
 
     void OnBlockStart();
     void OnBlockCompleted();
+    
+    UFUNCTION(BlueprintCallable, Category = "Input")
+    void OnDodge();
+    
+    FVector CachedDodgeDirection;
+
+public:
+    FVector GetDodgeDirection() const { return CachedDodgeDirection; }
 };

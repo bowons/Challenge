@@ -62,7 +62,7 @@ void UExecCalc_Damage::Execute_Implementation(const FGameplayEffectCustomExecuti
     float RawDamage = Spec.GetSetByCallerMagnitude(
         FGameplayTag::RequestGameplayTag(FName("Data.Damage")),
         false,      // WarnIfNotFound
-        30.0f       // Default 값
+        20.0f       // Default 값
     );
 
     // ============================================================

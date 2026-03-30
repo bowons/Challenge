@@ -5,6 +5,7 @@
 #include "EnhancedInputComponent.h"
 #include "Animation/AnimMontage.h"
 #include "Components/ComboManagerComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "GAS/Abilities/GA_Blocking.h"
 
 // Sets default values
@@ -235,4 +236,23 @@ void AMyCharacterBase::OnBlockCompleted()
             break;
         }
     }
+}
+
+void AMyCharacterBase::OnDodge()
+{
+    if (!AbilitySystemComponent) return;
+    
+    // 방향 캐싱
+    FVector InputDir = GetCharacterMovement()->GetLastInputVector();
+    if (InputDir.IsNearlyZero())
+    {
+        InputDir = GetActorForwardVector();
+    }
+    CachedDodgeDirection = InputDir.GetSafeNormal();
+    
+    FGameplayTagContainer AbilityTags;
+    AbilityTags.AddTag(FGameplayTag::RequestGameplayTag(FName("Ability.Dodge")));
+    
+    bool bSuccess = AbilitySystemComponent->TryActivateAbilitiesByTag(AbilityTags);
+    UE_LOG(LogTemp, Log, TEXT("[Dodge] TryActivate: %s"), bSuccess ? TEXT("Success") : TEXT("Failed"));
 }

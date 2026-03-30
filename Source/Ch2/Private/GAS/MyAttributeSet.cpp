@@ -62,7 +62,21 @@ void UMyAttributeSet::PostAttributeChange(const FGameplayAttribute& Attribute, f
 
 bool UMyAttributeSet::PreGameplayEffectExecute(FGameplayEffectModCallbackData& Data)
 {
-    return Super::PreGameplayEffectExecute(Data);
+    if (!Super::PreGameplayEffectExecute(Data)) return false;
+    
+    // Health 감소 GE가 실행되기 전
+    if (Data.EvaluatedData.Attribute == GetHealthAttribute())
+    {
+        if (Data.Target.HasMatchingGameplayTag(
+            FGameplayTag::RequestGameplayTag(FName("Character.Status.Invincible"))))
+        {
+            return false; // GE 실행 자체를 취소
+        }
+    }
+    
+    return true;
+    
+    //return Super::PreGameplayEffectExecute(Data);
 }
 
 void UMyAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallbackData& Data)

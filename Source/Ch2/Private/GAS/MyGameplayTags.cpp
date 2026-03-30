@@ -21,6 +21,7 @@ namespace MyGameplayTags
     // Data Tags
     UE_DEFINE_GAMEPLAY_TAG(Data_Damage, "Data.Damage");
     UE_DEFINE_GAMEPLAY_TAG(Data_Stamina_Cost, "Data.Stamina.Cost");
+    UE_DEFINE_GAMEPLAY_TAG(Data_Defense, "Data.Defense");
 
     // Ability Tags
     UE_DEFINE_GAMEPLAY_TAG(Ability_Attack_Charge, "Ability.Attack.Charge");
@@ -28,6 +29,7 @@ namespace MyGameplayTags
     UE_DEFINE_GAMEPLAY_TAG(Ability_Attack_Light, "Ability.Attack.Light");
     UE_DEFINE_GAMEPLAY_TAG(Ability_Attack_Melee, "Ability.Attack.Melee");
     UE_DEFINE_GAMEPLAY_TAG(Ability_Block, "Ability.Block");
+    UE_DEFINE_GAMEPLAY_TAG(Ability_Dodge, "Ability.Dodge");
 
     // Event Tags
     UE_DEFINE_GAMEPLAY_TAG(Event_Montage_DealDamage, "Event.Montage.DealDamage");
@@ -37,6 +39,7 @@ namespace MyGameplayTags
     UE_DEFINE_GAMEPLAY_TAG(State_Attacking_Heavy, "State.Attacking.Heavy");
     UE_DEFINE_GAMEPLAY_TAG(State_Attacking_Light, "State.Attacking.Light");
     UE_DEFINE_GAMEPLAY_TAG(State_Blocking, "State.Blocking");
+    UE_DEFINE_GAMEPLAY_TAG(State_Dodging, "State.Dodging");
 }
 
 FMyGameplayTags FMyGameplayTags::Tags;
@@ -59,7 +62,7 @@ void FMyGameplayTags::InitializeNativeTags()
     Tags.Character_State_Attacking = MyGameplayTags::Character_State_Attacking.GetTag();
     Tags.Character_State_Blocking = MyGameplayTags::Character_State_Blocking.GetTag();
     Tags.Character_State_Dodging = MyGameplayTags::Character_State_Dodging.GetTag();
-
+    
     Tags.Character_Status_Invincible = MyGameplayTags::Character_Status_Invincible.GetTag();
     Tags.Character_Status_Stunned = MyGameplayTags::Character_Status_Stunned.GetTag();
 
@@ -68,12 +71,14 @@ void FMyGameplayTags::InitializeNativeTags()
 
     Tags.Data_Damage = MyGameplayTags::Data_Damage.GetTag();
     Tags.Data_Stamina_Cost = MyGameplayTags::Data_Stamina_Cost.GetTag();
-
+    Tags.Data_Defense = MyGameplayTags::Data_Defense.GetTag();
+    
     Tags.Ability_Attack_Charge = MyGameplayTags::Ability_Attack_Charge.GetTag();
     Tags.Ability_Attack_Heavy = MyGameplayTags::Ability_Attack_Heavy.GetTag();
     Tags.Ability_Attack_Light = MyGameplayTags::Ability_Attack_Light.GetTag();
     Tags.Ability_Attack_Melee = MyGameplayTags::Ability_Attack_Melee.GetTag();
     Tags.Ability_Block = MyGameplayTags::Ability_Block.GetTag();
+    Tags.Ability_Dodge = MyGameplayTags::Ability_Dodge.GetTag();
 
     Tags.Event_Montage_DealDamage = MyGameplayTags::Event_Montage_DealDamage.GetTag();
 
@@ -81,4 +86,5 @@ void FMyGameplayTags::InitializeNativeTags()
     Tags.State_Attacking_Heavy = MyGameplayTags::State_Attacking_Heavy.GetTag();
     Tags.State_Attacking_Light = MyGameplayTags::State_Attacking_Light.GetTag();
     Tags.State_Blocking = MyGameplayTags::State_Blocking.GetTag();
+    Tags.State_Dodging = MyGameplayTags::State_Dodging.GetTag();
 }

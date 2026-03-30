@@ -24,6 +24,7 @@ namespace MyGameplayTags
 
     // Data Tags
     UE_DECLARE_GAMEPLAY_TAG_EXTERN(Data_Damage);
+    UE_DECLARE_GAMEPLAY_TAG_EXTERN(Data_Defense);
     UE_DECLARE_GAMEPLAY_TAG_EXTERN(Data_Stamina_Cost);
 
     // Ability Tags
@@ -95,6 +96,8 @@ public:
 
     /** 데이터: 스태미너 코스트 */
     FGameplayTag Data_Stamina_Cost;
+    
+    FGameplayTag Data_Defense;
 
     //=========================================================================
     // Ability Tags
@@ -137,6 +140,8 @@ public:
 
     /** 상태: 블로킹 중 */
     FGameplayTag State_Blocking;
+    FGameplayTag Ability_Dodge;
+    FGameplayTag State_Dodging;
 
 private:
     static FMyGameplayTags Tags;
